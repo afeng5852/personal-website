@@ -1,0 +1,296 @@
+/* tags */
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+a:hover {
+  text-decoration: line-through;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+
+label {   /* sandwich */
+  padding-bottom: 30px;
+}
+
+
+/* classes */
+
+.contact {
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.icons {
+  width: 30px;
+  height: 30px;
+}
+
+.student, .designer, .bubble-tea {
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+.student-description, .designer-description, .bubble-tea-lover-description {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+
+.description {   /* intro in home page */
+  margin-top: 200px;
+  margin-left: 50px;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.Introduction {   /* div that holds all of content in about */
+  margin-top: 30px;
+  margin-left: 50px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navlinks { /* holds navbar headings */
+  list-style: none;
+}
+
+.navlinks li {
+  display: inline-block;
+  padding: 0 40px;
+}
+
+#bubble_tea {
+  /* position: absolute; */
+  /* margin-right: 200px; */
+  height: 350px;
+  width: 400px;
+  clear: both;
+  float: right;
+}
+
+#idea {
+  /* position: absolute; */
+  /* margin-right: 200px; */
+  height: 350px;
+  width: 400px;
+  clear: both;
+  float: right;
+}
+
+#portrait {
+  float: right;
+  margin-right: 200px;
+  height: 690px;
+  width: 400px;
+}
+
+#rhett {
+  /* position: absolute; */
+  /* margin-right: 200px; */
+  float: right;
+  height: 350px;
+  width: 400px;
+  clear: both;
+}
+
+#uniqlo {
+  margin-left: 50px;
+  margin-top: 30px;
+  width: 40%;
+}
+
+#toggle{
+  display: block;
+}
+
+.nav{
+  text-align: right;
+  height: 70px;
+  line-height: 70px;
+  display: none;
+}
+
+.menu{
+  margin: 0 30px 0 0;
+  display: none;
+}
+
+.menu a{
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+  line-height: 70px;
+  font-family: 'Lora';
+}
+
+label{
+  font-size: 30px;
+  line-height: 70px;
+  display: none;
+}
+
+
+/* .footer{
+  display: flex;
+  margin-left: auto;
+}
+
+.footer ul{
+  display: flex;
+  list-style: none;
+  position: absolute;
+}
+
+.footer a{
+  padding: 0px 50px;
+  justify-content: space-between;
+} */
+
+table tr th{
+  border-right: 122px solid white;
+}
+
+/* uniqlo app styles */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: ". Title Title ."
+                        ". Role Time-Duration ."
+                        ". Project-Statement Project-Statement ."
+                        ". User-Research User-Research .";
+}
+
+.Title {
+  grid-area: Title;
+  font-family: 'Lora';
+  font-size: 20px;
+  text-align: left;
+}
+
+.Role {
+  grid-area: Role;
+  font-family: 'Montserrat';
+}
+
+.Time-Duration {
+  grid-area: Time-Duration;
+  font-family: 'Montserrat';
+  height: 2px;
+}
+
+.Project-Statement {
+  grid-area: Project-Statement;
+  font-family: 'Montserrat';
+}
+
+.User-Research {
+  grid-area: User-Research;
+  font-family: 'Montserrat';
+}
+
+h1{
+  color: gray;
+}
+
+.final_mockup{
+  width: 100%;
+  
+}
+
+
+@media all and (max-width: 1024px) {
+  .header {
+    position: relative;
+  }
+
+  .nav a {
+    background-color: black;
+    color: white;
+  }
+
+  .burger {
+    display: block;
+    /* position: absolute; */
+    /* right: 20px;
+    top: 10px; */
+  }
+
+  .navlinks li {
+    display: none;
+  }
+
+  #portrait {
+    width: 300px;
+    height: 600px;
+  }
+
+  #rhett, #idea, #bubble_tea {
+    width: 300px;
+    height: 300px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+
+  .bubble-tea-lover-description, .designer-description, .student-description, .student, .designer, .food-connoisseur {
+    font-size: 13px;
+  }
+
+  .bubble-tea-lover-description, .designer-description, .student-description {
+    width: 600px;
+  }
+
+  .icons{
+    width: 15px;
+    height: 15px;
+  }
+
+  table tr th{
+    border-right: 100px solid white;
+  }
+
+.nav{
+  display: block;
+}
+
+  .nav label{
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu{
+    text-align: center;
+    width: 100%;
+
+  }
+
+  .menu a{
+    display: block;
+    border-bottom:  1px solid #eaeaeb;
+    margin: 0;
+
+  }
+
+  #toggle:checked + .menu{
+    display: block;
+  }
+
+  #toggle{
+    display: none;
+  }
+
+}

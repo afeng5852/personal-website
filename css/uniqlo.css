@@ -1,0 +1,19 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: ". Title Title ." ". Role Time-Duration ." ". Project-Statement Project-Statement .";
+}
+
+.Title {
+  grid-area: Title;
+  font-family: 'Montserrat';
+  text-align: center;
+}
+
+.Role { grid-area: Role; }
+
+.Time-Duration { grid-area: Time-Duration; }
+
+.Project-Statement { grid-area: Project-Statement; }
