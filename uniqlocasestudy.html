@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Uniqlo App Revamped - Alex Feng</title>
+  <title>UNIQLO App Reimagined - Alex Feng</title>
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Montserrat:wght@100;200;300;400;700&display=swap" rel="stylesheet">
 </head>
@@ -37,13 +37,45 @@
 
 
   <div class="grid-container">
-    <div class="Title">
-      The Uniqlo App: Revamped
-      <br>
-      <br>
+
+    <!-- <div class="side-nav">
+      <ul>
+        <li>
+          <a href="#Title">UNIQLO</a>
+        </li>
+        <li>
+          <a href="#Project-Statement">01: Overview</a>
+        </li>
+        <li>
+          <a href="#User-Research">02: User Research</a>
+        </li>
+        <li>
+          <a href="#Market-Research">03: Market Research</a>
+        </li>
+        <li>
+          <a href="#Wireframing">04: Wireframing</a>
+        </li>
+        <li>
+          <a href="#Prototype">05: Prototype</a>
+        </li>
+      </ul>
+    </div> -->
+
+    <div class="Title" id="Title">
+      <span id="uniqlo-title">UNIQLO</span> Reimagined
       <img src="pics/final_mockup.png" alt="" class="final_mockup">
+      <table>
+        <tr>
+          <td>Team: Alex Feng, Annie Kuang</td>
+          <td>Tools: Figma, Adobe Illustrator</td>
+        </tr>
+        <tr>
+          <td>Duration: 5 Weeks</td>
+          <td>My Role: Lead UX Researcher + Visual Design</td>
+        </tr>
+      </table>
     </div>
-    <div class="Role">
+    <!-- <div class="Role">
       <p>
         Team: Alex Feng, Annie Kuang
       </p>
@@ -51,22 +83,29 @@
       <p>
         Duration: 5 weeks
       </p>
-    </div>
-    <div class="Time-Duration">
+    </div> -->
+    <!-- <div class="Time-Duration">
       <p>
         Tools: Figma, Adobe Illustrator
       </p>
       <p>
-        My Role: User research, Market research, High-fi design
+        My Role: Lead UX Researcher + Visual Design
       </p>
 
-    </div>
-    <div class="Project-Statement">
+    </div> -->
+    <div class="Project-Statement" id="Project-Statement">
+      <hr>
       <h1>
         01: Overview
       </h1>
+      <h3>Background</h3>
+      <p>UNIQLO was founded in Yamaguchi, Japan in 1949. It first started as a
+      textiles manufacturer before expanding to the global clothing brand that we know today.
+      Known for their simplistic and quality apparel, no wonder it has amassed so many loyal customers.
+      </p>
+      <h3>The Journey</h3>
       <p>
-        My journey with the Uniqlo app began when they were having
+        My journey with the UNIQLO app began when they were having
         an in-app only promotion for their HEATTECH attire. Like any
         college student, I could not pass up on free clothing, so I
         downloaded the app for the first time. Right away, the
@@ -76,70 +115,110 @@
         I realized that others felt the same way, so I embarked
         on this journey to fix some of these issues.
       </p>
+      <hr>
     </div>
 
-    <div class="User-Research">
+    <div class="User-Research" id="User-Research">
       <h1>
         02: User Research
       </h1>
       <h3>
         User Testing and Surveys
       </h3>
-        <p>
-          To understand user paint points and the user journey, I asked
-          users to freely use the app and to answer some of my concerns noted
-          below:
-        </p>
-        <li>
-          Explain the process of completing a purchase using the Uniqlo app
-        </li>
+      <p>
+        To understand user paint points and the user journey, I asked
+        users to freely use the app while screen recording. Afterwards, I instructed them
+        to answer some questions about their experience. Here are some of the questions below:
+      </p>
+      <li>
+        Explain the process of completing a purchase using the UNIQLO app
+      </li>
+      <br>
+      <li>
+        How easy was it to navigate the app?
+      </li>
+      <br>
+      <li>
+        What are the most convenient and inconvenient features of the app?
+      </li>
+      <h3> Results</h3>
+      <p>Below is one of the user journeys that I found interesting. This user, like the others,
+        was frustrated with the return feature. Instead of utitilizing the back button that
+        is displayed on the top left, they had to resort to clicking the logo which returned back to the
+        home screen.</p>
+      <video id="video" width="700px" height="600px;" src="pics/helen.mov" controls autoplay>
+        <!-- <source src="pics/helen.mov" type="video/mov"> -->
+      </video>
+      <p> After interviewing the other 8 participants and analyzing their videos, I was able to understand some of their
+        pain points and frustrations with using the app. Here are some of the key takeaways
+        from the findings:
+      </p>
+      <br>
+      <img id="affinity_diagram" src="pics/Frame 1.png" alt="">
+      <p>I realized that many of their frustrations came from the app's navigation which they found
+        confusing to complete tasks. They had a hard time interacting with interface because the
+        web-wrapping and pop-up messages made it inconvenient. They also never interacted with the app's others
+        features like Blog, Store Locator, and My Account, because they were on the app solely to browse and not buy.
+        The navigation on the top was also left untouched, because they saw no need to use it. </p>
+      <br>
+      <p>
+        However, there were some features that the users did enjoy using -
+        coupons, store availability, categories. After organizing the data into the affinity diagram, I was
+        ready to create a persona to further understand the users' needs and demands. </p>
+      <br>
+      <img id="persona" src="pics/persona.png" alt="">
+      <!-- <p>Here are some quotes from the interviews that I found insightful: </p>
+        <h4>The interface seems like you're using their website on a mobile browser.
+          It doesn't feel like an app. Also, it's annoying how once you select a category (men, women, baby, and etc), you can't really go back and forth easily.
+          You would have to close the pop out window to browse another category.</h4>
+          <h4>When you click on anything, it pulls up their website/diff tab so if
+            you want to go back you have to exit out completely of your current tab.</h4> -->
+      <p>User research led me to conclude that improving navigation and eliminating redudancy were at heart
+        of user pains. The app had many features that either users were not aware of or did not find a use for.
+        This meant making the UI clear and concise to improve their experiences. </p>
+      <hr>
+    </div>
+    <!-- <div class="Market-Research" id="Market-Research">
+      <h1>03: Market Research</h1>
+      <p>I looked at other clothing companies' apps (Urban Outfitters, H&M, and American Eagle) to draw some inspiration but to also
+      see how they addressed some of the concerns that UNIQLO's users had. I realized that the other apps prioritized
+      a clean UI and simple UX. For example, all of the other apps had featured items without having to bombard users with promotions.
+      Here are some of
+    the key takeways from this cross-analysis:  </p>
+    </div> -->
+    <div class="Wireframing" id="Wireframing">
+      <h1>03: Wireframing</h1>
+      <p>I began with low fidelity wireframes to get a general direction of the redesign. My main concern was making the UI
+        simplistic and consistent not only to improve the UX but to also be consistent with UNIQLO's brand.</p>
+      <img id="lo-fi-wireframe" src="pics/IMG-4717.jpg" alt="">
+      <p>Once I got a sense of the layout and aesthetic, I moved onto mid-fidelity wireframes. Here, I continued designing
+        the other pages and began structuring them with content.</p>
+      <iframe id="mid-fi-wireframe" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
+        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FBQxI3Rfw69LgcOkE3mLCKj%2FWireframe-Copy%3Fnode-id%3D0%253A1&chrome=DOCUMENTATION" allowfullscreen></iframe>
+      <hr>
+    </div>
+    <div class="Prototype" id="Prototype">
+      <h1>04: Prototype</h1>
+      <p>After creating the mid-fidelity wireframes, I started to design a working prototype. I made sure to be consistent with
+        UNIQLO's minimalistic UI.</p>
+      <iframe id="prototype" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
+        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F4AnLIteqIQtS6CQ4eQTgbt%2FWireframe%3Fnode-id%3D12%253A24%26scaling%3Dscale-down&chrome=DOCUMENTATION" allowfullscreen></iframe>
+      <hr>
+    </div>
+    <div class="Reflection" id="Reflection">
+      <h1>05: Reflection</h1>
+      <p>This was my first UI/UX case study and it was an exciting and fun project to work on. I learned a lot about
+        user research and its great importance in design. I also really enjoyed the visual design process and got better
+        at using Figma and Adobe Illustrator. Here are my key takeaways from this project:</p>
+      <ul>
+        <li>Don't rush the process. This was my first project so I was very eager to show what I knew. Instead, I should
+          have taken more time in between each step to fully analyze my data. </li>
         <br>
-        <li>
-          How easy was it to navigate the app?
-        </li>
-        <br>
-        <li>
-          What are the most convenient and inconvenient features of the app?
-        </li>
-        <h3> User Pain Points</h3>
-        <div class="Search">
-          <h4>Search</h4>
-          <li>
-            "The filter feature is not really that helpful, especially the color one. It just doesn't look appealing to use."
-          </li>
-          <br>
-          <li>
-            "It did not recognize the item I was trying to look for through its name."
-          </li>
-          <br>
-          <li>
-            "[difficulties] searching for specific item"
-          </li>
-        </div>
-        <div class="Interface">
-          <h4>Interface</h4>
-          <li>
-            “The app is a bit clunky/awkward”
-          </li>
-          <br>
-          <li>
-            “The interface seems like you're using their website on a mobile browser.”
-          </li>
-          <br>
-          <li>
-            “The interface seems like you're using their website on a mobile browser.”
-          </li>
-        </div>
-        <table>
-          <th>
-            Search
-          </th>
-        </table>
-        <br>
-        <img src="pics/persona.png" alt="">
-        <div class="">
-
-        </div>
+        <li>Focus more on UX. I spent too much time on prototyping and creating a beautiful redesign. Design is more than just
+          pretty visuals, but a focus on the users and their thinking. </li>
+      </ul>
+      <p>Nevertheless, I'm proud of what I did and this was a great learning experience. I look forward to my next
+        project and improving my design skills.</p>
     </div>
 
   </div>

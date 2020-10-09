@@ -16,10 +16,19 @@ header {
   padding: 20px 50px;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 
 label {   /* sandwich */
   padding-bottom: 30px;
 }
+
+/* table td{
+  padding: 10px;
+} */
+
 
 
 /* classes */
@@ -69,6 +78,11 @@ label {   /* sandwich */
   padding: 0 40px;
 }
 
+#affinity_diagram{
+  width: 100%;
+  height: 200%;
+}
+
 #bubble_tea {
   /* position: absolute; */
   /* margin-right: 200px; */
@@ -87,11 +101,28 @@ label {   /* sandwich */
   float: right;
 }
 
+#lo-fi-wireframe {
+  width: 700px;
+  height: auto;
+}
+
+#mid-fi-wireframe{
+  width: 700px;
+}
+
 #portrait {
   float: right;
   margin-right: 200px;
   height: 690px;
   width: 400px;
+}
+
+#persona {
+  width: 100%
+}
+
+#prototype{
+  width: 700px;
 }
 
 #rhett {
@@ -109,7 +140,16 @@ label {   /* sandwich */
   width: 40%;
 }
 
+#uniqlo-title {
+  background-color: red;
+  color: white;
+}
+
 #toggle{
+  display: block;
+}
+
+#video {
   display: block;
 }
 
@@ -163,24 +203,26 @@ table tr th{
 /* uniqlo app styles */
 
 .grid-container {
+  margin-top: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 1px 1px;
   grid-template-areas: ". Title Title ."
-                        ". Role Time-Duration ."
                         ". Project-Statement Project-Statement ."
-                        ". User-Research User-Research .";
+                        ". User-Research User-Research ."
+                        ". Wireframing Wireframing ."
+                        ". Prototype Prototype ."
+                        ". Reflection Reflection .";
 }
 
 .Title {
   grid-area: Title;
   font-family: 'Lora';
-  font-size: 20px;
-  text-align: left;
+  /* font-size: 80px; */
 }
 
-.Role {
+/* .Role {
   grid-area: Role;
   font-family: 'Montserrat';
 }
@@ -189,26 +231,87 @@ table tr th{
   grid-area: Time-Duration;
   font-family: 'Montserrat';
   height: 2px;
-}
+} */
 
 .Project-Statement {
+  margin-top: auto;
   grid-area: Project-Statement;
   font-family: 'Montserrat';
+  line-height: 2;
+}
+
+.Reflection {
+  grid-area: Reflection;
+  font-family: 'Montserrat';
+  line-height: 2;
 }
 
 .User-Research {
   grid-area: User-Research;
   font-family: 'Montserrat';
+  line-height: 2;
+}
+
+/* .Market-Research {
+  grid-area: Market-Research;
+  font-family: 'Montserrat';
+  line-height: 2;
+} */
+
+/* .Role1 {
+  display: inline-block;
+  font-family: 'Montserrat';
+  height: 2px;
+}
+
+.Time-Duration2{
+  width: auto;
+  text-align: right;
+  display: inline-block;
+  font-family: 'Montserrat';
+  height: 2px;
+} */
+
+/* .side-nav{
+  display: none;
+  grid-area: side-nav;
+  font-family: 'Montserrat';
+  height: 2px;
+  position: fixed;
+}
+
+.side-nav li {
+  margin-bottom: 30px;
+}
+
+.side-nav ul{
+  list-style: none;
+} */
+
+.Wireframing{
+  grid-area: Wireframing;
+  font-family: 'Montserrat';
+  line-height: 2;
+}
+
+.Prototype{
+  grid-area: Prototype;
+  font-family: 'Montserrat';
+  line-height: 2;
 }
 
 h1{
-  color: gray;
+  color: red;
 }
 
 .final_mockup{
   width: 100%;
-  
 }
+
+hr {
+  background-color: black;
+}
+
 
 
 @media all and (max-width: 1024px) {
@@ -285,12 +388,41 @@ h1{
 
   }
 
+  .Project-Statement p, .User-Research p, .User-Research li, .Wireframing p, .Prototype p, .Reflection p, .Reflection li{
+    font-size: 10px;
+  }
+
+  /* .side-nav a{
+    font-size: 15px;
+  }
+
+  .side-nav li{
+    margin-bottom: 100px;
+  } */
+
   #toggle:checked + .menu{
     display: block;
   }
 
   #toggle{
     display: none;
+  }
+
+  #prototype{
+    width: auto;
+  }
+
+  #video{
+    width: auto;
+  }
+
+  #lo-fi-wireframe{
+    width:500px;
+    height: 300px;
+  }
+
+  #mid-fi-wireframe{
+    width: auto;
   }
 
 }
